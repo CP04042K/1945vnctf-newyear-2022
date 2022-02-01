@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Index Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Please login here before you can access start page.</p>
+    <form action="/Home/Index" method="post">
+    <label for="Name">Name</label> <input type="text" name="Name" />
+    <br />
+    <label for="Pass">Pass</label> <input type="text" name="Pass" />
+    <br />
+    <input type="submit" name="submit" />
+    <br /><br /><br />
+    <code>@ViewData["auth"]</code>
+</form>
+</div>

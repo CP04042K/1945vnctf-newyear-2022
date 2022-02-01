@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "Start Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Flag Render</h1>
+    <form action="/Home/Start" method="post">
+    <label for="Auth">Auth</label> <input type="text" name="Auth" />
+    <br />
+    <input type="submit" name="submit" />
+    <br /><br /><br />
+    <code>@ViewData["flag"]</code>
+    </form>
+</div>
